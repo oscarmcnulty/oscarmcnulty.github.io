@@ -37,3 +37,6 @@ J6 - pin 2 eeprom - 24c64 RP - left floating
 J6 - pin 3 ground
 To program, connect P1 and P3
 In normal operation, connect P1 and P2 or leave all unconnected.
+
+https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf
+

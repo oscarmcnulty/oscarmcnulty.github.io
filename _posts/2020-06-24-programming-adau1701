@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "Installing Turnigy 9X Backlight"
+date:   2019-07-11 19:52:00 -0700
+---
+
+Download and install CySuiteUSB_3_4_7_B204.exe from here https://www.cypress.com/documentation/software-and-drivers/suiteusb-34-usb-development-tools-visual-studio
+Download `CY3684 EZ-USB FX2LP Development Kit (Rev. *B)` and install CY3684Setup.exe from the zip https://www.cypress.com/documentation/development-kitsboards/cy3684-ez-usb-fx2lp-development-kit
+Disconnect the dsp board from programmer and connect programmer to USB. 
+Go to device manager and set the driver to right right windows version here C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Drivers (win 8.1 folder seems to work with win 10)
+
+Download and install SigmaStudio v4.5 https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#software-relatedsoftware
+
+Launch C:\Cypress\Cypress Suite USB 3.4.7\CyConsole\CyConsole.exe
+Load ADI_USBi.spt and click the play button 
+
+ADAU1701 board http://www.3e-audio.com/dsp/adau1701-2in4out/
+
+
+
+
+
+My board was of the 2 jumper model & I think both are the same.
+J1 is to connect/disconnect 2 LEDs from Vcc - these LEDs are connected to D0 & D1
+J2 controls the high address bit of the EEPROM making it appear at I2C address 0xA0 or 0xA2 depending on the jumper.
+

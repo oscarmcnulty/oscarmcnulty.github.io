@@ -17,7 +17,12 @@ Load ADI_USBi.spt and click the play button
 ADAU1701 board http://www.3e-audio.com/dsp/adau1701-2in4out/
 
 
-
+Download 24aa256.zip (24aa256.bix 8kB)
+To transfer 24aa256.bix to the EEprom on the CY7C68013A development board:
+- Remove jumpers on the CY7C68013A development board,
+- Start CyConsole (part of Cypress Suite), Choose menu Options-> EZ-USB interface
+- push button lgEEPROM, select the EEPROM file i.e. 24aa256.bix (rename to .iic). Download should start
+Leave jumper off to boot from eeprom 
 
 
 My board was of the 2 jumper model & I think both are the same.

@@ -29,3 +29,11 @@ My board was of the 2 jumper model & I think both are the same.
 J1 is to connect/disconnect 2 LEDs from Vcc - these LEDs are connected to D0 & D1
 J2 controls the high address bit of the EEPROM making it appear at I2C address 0xA0 or 0xA2 depending on the jumper.
 
+
+3e-audio adau1701 board
+
+J6 - pin 1 (closest to potentiometers) - ADAU1701 CLATCH/WP (write protect), driven high by 3.3V through 10kOhm resistor
+J6 - pin 2 eeprom - 24c64 RP - left floating
+J6 - pin 3 ground
+To program, connect P1 and P3
+In normal operation, connect P1 and P2 or leave all unconnected.

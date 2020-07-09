@@ -3,15 +3,17 @@ layout: post
 title:  "Programming 3e-Audio ADAU1701 with budget Cypress CY7C68013A programmer"
 date:   2020-07-08 21:13:00 -0700
 ---
-Reference: https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html
+[Reference diyaudio Thread](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)
 
-ADAU1701 board http://www.3e-audio.com/dsp/adau1701-2in4out/
-
-CY7C68013A board <TODO Aliexpress link>
+#### Hardware
+- $48.83 shipped - [3e-Audio ADAU1701 board](http://www.3e-audio.com/dsp/adau1701-2in4out/). Process would be similar for generic aliexpress board or sure/wondom board. I bought the more expensize 3e-Audio board for the 4 differential op-amp design.
+- $4.32USD shipped - CY7C68013A board sold on aliexpress as [EZ-USB FX2LP CY7C68013A USB logic analyzer](https://www.aliexpress.com/item/1907907422.html?spm=a2g0s.9042311.0.0.65b34c4dStAay6)
+- ~470Ohm resistor 
+- Jumper wires to connect boards
 
 Working with Windows 7. May work with more recent windows but [some people have had issues](https://ez.analog.com/dsp/sigmadsp/f/q-a/65011/usbi-problems-with-windows-10). 
 
-#### Download Software
+#### Install Software
 - Download and install CySuiteUSB_3_4_7_B204.exe from [cypress website](https://www.cypress.com/documentation/software-and-drivers/suiteusb-34-usb-development-tools-visual-studio)
 - Download `CY3684 EZ-USB FX2LP Development Kit (Rev. *B)` and install with CY3684Setup.exe from the [cypress website](https://www.cypress.com/documentation/development-kitsboards/cy3684-ez-usb-fx2lp-development-kit)
 - Download and install [SigmaStudio v4.5](https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#software-relatedsoftware)
@@ -35,7 +37,7 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 `J1` is to connect/disconnect 2 LEDs from Vcc - these LEDs are connected to D0 & D1
 `J2` controls the high address bit of the EEPROM making it appear at I2C address 0xA0 or 0xA2 depending on the jumper.
 
-#### Programming the 3e-Audio ADAU1701 board
+#### Program the 3e-Audio ADAU1701 board
 - Connect pins 1 and 3 on J6 then power up the board in order to boot into I2C mode where EEPROM is writeable (ensure that the power jumpers are configured for the power supply you are using)
   - J6 - pin 1 (pin closest to potentiometers) - ADAU1701 CLATCH/WP (write protect) pin, driven high by 3.3V through 10kOhm resistor if left unconnected
   - J6 - pin 2 eeprom - 24c64 WP (write protect) pin - left floating if left unconnected

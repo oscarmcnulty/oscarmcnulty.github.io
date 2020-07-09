@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Programming 3e-Audio ADAU1701 with budget Cypress CY7C68013A programmer"
-date:   2019-07-11 19:52:00 -0700
+date:   2020-07-08 21:13:00 -0700
 ---
 Reference: https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html
 

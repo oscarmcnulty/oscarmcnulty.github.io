@@ -6,6 +6,7 @@ date:   2020-07-08 21:13:00 -0700
 Reference: https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html
 
 ADAU1701 board http://www.3e-audio.com/dsp/adau1701-2in4out/
+
 CY7C68013A board <TODO Aliexpress link>
 
 Working with Windows 7. May work with more recent windows but [some people have had issues](https://ez.analog.com/dsp/sigmadsp/f/q-a/65011/usbi-problems-with-windows-10). 
@@ -25,8 +26,7 @@ The Cypress board will now appear and function as a USBi programmer until it is 
 
 If you want the Cypress board to permanently appear as a USBi programmer then you can flash the vendor information on the board. This doesn't change the function of the board but changes what it appears as to the computer.
 
-Download 24aa256.iic (8kB)
-To transfer 24aa256.iic to the EEprom on the CY7C68013A development board:
+Download 24aa256.iic (8kB). To transfer 24aa256.iic to the EEprom on the CY7C68013A development board:
 - Remove jumper on the CY7C68013A development board (J2 on 2 jumper board) to enable EEPROM to be written,
 - Start CyConsole (part of Cypress Suite), Choose menu Options-> EZ-USB interface
 - push button `lgEEPROM`, select the EEPROM file (24aa256.iic). Download to device will start

@@ -53,7 +53,7 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 - In SigmaStudio use `Link, Compile, Connect` to load the current design to the ADAU1701
 
 #### Reference Documentation
-- [](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)
-- [](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
+- [https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)
+- [https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
 
 

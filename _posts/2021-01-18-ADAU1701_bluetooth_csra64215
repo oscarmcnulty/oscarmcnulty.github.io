@@ -14,4 +14,6 @@ date:   2021-01-18 12:46:00 -0800
 #### Reference docs
 https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf
 
-
+#### 3e-audio board notes
+J2 - Connects MP11
+J3 - Connects MP10

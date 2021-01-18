@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "Adding bluetooth to 3e-Audio ADAU1701 with CSR64215"
+date:   2021-01-18 12:46:00 -0800
+---
+
+#### Hardware
+- $48.83USD shipped - [3e-Audio ADAU1701 board](http://www.3e-audio.com/dsp/adau1701-2in4out/). Process would be similar for generic aliexpress board or sure/wondom board. I bought the more expensize 3e-Audio board for the 4 differential op-amp design.
+- $11.42USD shipped - [CSR64215 board with I2S output](https://www.aliexpress.com/item/32716171541.html?spm=a2g0s.9042311.0.0.3a674c4d1IYtKa)
+- $4.32USD shipped - CY7C68013A board sold on aliexpress as [EZ-USB FX2LP CY7C68013A USB logic analyzer](https://www.aliexpress.com/item/1907907422.html?spm=a2g0s.9042311.0.0.65b34c4dStAay6)
+- ~470Ohm resistor 
+- Jumper wires to connect boards
+
+

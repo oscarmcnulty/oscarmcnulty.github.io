@@ -8,7 +8,7 @@ date:   2020-07-08 21:13:00 -0700
 #### Hardware
 - $48.83USD shipped - [3e-Audio ADAU1701 board](http://www.3e-audio.com/dsp/adau1701-2in4out/). Process would be similar for generic aliexpress board or sure/wondom board. I bought the more expensize 3e-Audio board for the 4 differential op-amp design.
 - $4.32USD shipped - CY7C68013A board sold on aliexpress as [EZ-USB FX2LP CY7C68013A USB logic analyzer](https://www.aliexpress.com/item/1907907422.html?spm=a2g0s.9042311.0.0.65b34c4dStAay6)
-- ~470Ohm resistor 
+- ~470 Ohm resistor 
 - Jumper wires to connect boards
 
 Working with Windows 7. May work with more recent windows but [some people have had issues](https://ez.analog.com/dsp/sigmadsp/f/q-a/65011/usbi-problems-with-windows-10). 
@@ -48,9 +48,9 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
   - Cypress Programmer <-> 3e-Audio ADAU1701
   - SCL <-> SCL
   - SDA <-> SDA
-  - PB0 <-> 470Ohm resistor <-> BRD_RST (add a resistor between the 2 boards for these pins)
+  - PB0 <-> 470 Ohm resistor <-> BRD_RST (add a resistor between the 2 boards for these pins)
   - GND <-> GND
-- In SigmaStudio use `Link, Compile, Connect` to load the current design to the ADAU1701
+- In SigmaStudio use `Link, Compile, Download` to load the current design to the ADAU1701
 
 #### Reference Documentation
 - [https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)

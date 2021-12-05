@@ -58,7 +58,7 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 There is a bug with IIR table/Linkwitz Transform in sigma studio. To workaround, a1 and a2 need the sign inversed (1.990781326207430 -> -1.990781326207430)
 
 #### Windows 10 compatibility
-(This worked on windows 10 using a board that has been flashed with 24aa256.iic from above.)
+(This worked on windows 10 using a programming board that has been flashed with 24aa256.iic from above.)
 - Per instructions [https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739](here) download and install [https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit](Cypress FX3 SDK)
 - In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device"
 

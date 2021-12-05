@@ -59,11 +59,11 @@ There is a bug with IIR table/Linkwitz Transform in sigma studio. To workaround,
 
 #### Windows 10 compatibility
 (This worked on windows 10 using a programming board that has been flashed with 24aa256.iic from above.)
-- Per instructions [https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739](here) download and install [https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit](Cypress FX3 SDK)
+- Per instructions [here](https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739) download and install [Cypress FX3 SDK](https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit)
 - In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device"
 
 #### Reference Documentation
-- [https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)
-- [https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
+- [Original DIY audio thread](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)
+- [ADAU170 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAU1701.pdf)
 
 

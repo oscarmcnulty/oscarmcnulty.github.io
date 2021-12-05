@@ -38,19 +38,29 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 `J2` controls the high address bit of the EEPROM making it appear at I2C address 0xA0 or 0xA2 depending on the jumper.
 
 #### Program the 3e-Audio ADAU1701 board
-- Connect pins 1 and 3 on J6 then power up the board in order to boot into I2C mode where EEPROM is writeable (ensure that the power jumpers are configured for the power supply you are using)
+- Power up the ADAU1701 board with nothing attached - (ensure that the power jumpers are configured for the power supply you are using)
+- Connect pins 1 and 3 on J6 to make the EEPROM writeable 
   - J6 - pin 1 (pin closest to potentiometers) - ADAU1701 CLATCH/WP (write protect) pin, driven high by 3.3V through 10kOhm resistor if left unconnected
   - J6 - pin 2 eeprom - 24c64 WP (write protect) pin - left floating if left unconnected
   - J6 - pin 3 ground
   - To program, connect P1 and P3. For normal operation, connect P1 and P2 or leave all unconnected.
 
-- Power up the programmer and ADAU1701 board separately before connecting them. Then connect pins as follows
-  - Cypress Programmer <-> 3e-Audio ADAU1701
+- Power up the programmer before connecting it to the ADAU1701 board. Then connect pins as follows
+  - (Cypress Programmer <-> 3e-Audio ADAU1701)
   - SCL <-> SCL
   - SDA <-> SDA
   - PB0 <-> 470 Ohm resistor <-> BRD_RST (add a resistor between the 2 boards for these pins)
   - GND <-> GND
-- In SigmaStudio use `Link, Compile, Download` to load the current design to the ADAU1701
+- To temporarily load the current design to the ADAU1701: Click `Link, Compile, Download` 
+- To write the current design permanently to the eeprom: "Hardware Config" -> "Config" -> right click on ADAU1701 box -> "Write latest compilation to E2PROM"
+
+
+There is a bug with IIR table/Linkwitz Transform in sigma studio. To workaround, a1 and a2 need the sign inversed (1.990781326207430 -> -1.990781326207430)
+
+#### Windows 10 compatibility
+(This worked on windows 10 using a board that has been flashed with 24aa256.iic from above.)
+- Per instructions [https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739](here) download and install [https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit](Cypress FX3 SDK)
+- In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device"
 
 #### Reference Documentation
 - [https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)

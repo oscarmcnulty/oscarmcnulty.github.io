@@ -18,6 +18,11 @@ Working with Windows 7. May work with more recent windows but [some people have 
 - Download `CY3684 EZ-USB FX2LP Development Kit (Rev. *B)` and install with CY3684Setup.exe from the [cypress website](https://www.cypress.com/documentation/development-kitsboards/cy3684-ez-usb-fx2lp-development-kit)
 - Download and install [SigmaStudio v4.5](https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#software-relatedsoftware)
 
+##### Windows 10 debugging
+- Post here suggests you need FX3 SDK. Download FX3SDKSetup_1.3.4.exe https://www.infineon.com/cms/en/design-support/tools/sdk/usb-controllers-sdk/ez-usb-fx3-software-development-kit/
+- Sigma Studio 4.7 + FX3SDK works with windows 11 22000.613 
+
+
 #### Setup CY7C68013A to Appear as USBi Programmer
 - Connect programmer to computer USB. 
 - Go to device manager and set the driver to corresponding windows version here C:\Cypress\USB\CY3684_EZ-USB_FX2LP_DVK\1.1\Drivers 

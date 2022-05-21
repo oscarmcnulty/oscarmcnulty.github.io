@@ -11,16 +11,12 @@ date:   2020-07-08 21:13:00 -0700
 - ~470 Ohm resistor 
 - Jumper wires to connect boards
 
-Working with Windows 7. May work with more recent windows but [some people have had issues](https://ez.analog.com/dsp/sigmadsp/f/q-a/65011/usbi-problems-with-windows-10). 
+Working with Windows 7. See below for windows May work with more recent windows but [some people have had issues](https://ez.analog.com/dsp/sigmadsp/f/q-a/65011/usbi-problems-with-windows-10). 
 
 #### Install Software
 - Download and install CySuiteUSB_3_4_7_B204.exe from [cypress website](https://www.cypress.com/documentation/software-and-drivers/suiteusb-34-usb-development-tools-visual-studio)
 - Download `CY3684 EZ-USB FX2LP Development Kit (Rev. *B)` and install with CY3684Setup.exe from the [cypress website](https://www.cypress.com/documentation/development-kitsboards/cy3684-ez-usb-fx2lp-development-kit)
 - Download and install [SigmaStudio v4.5](https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/ss_sigst_02.html#software-relatedsoftware)
-
-##### Windows 10 debugging
-- Post here suggests you need FX3 SDK. Download FX3SDKSetup_1.3.4.exe https://www.infineon.com/cms/en/design-support/tools/sdk/usb-controllers-sdk/ez-usb-fx3-software-development-kit/
-- Sigma Studio 4.7 + FX3SDK works with windows 11 22000.613 
 
 
 #### Setup CY7C68013A to Appear as USBi Programmer
@@ -42,7 +38,7 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 `J1` is to connect/disconnect 2 LEDs from Vcc - these LEDs are connected to D0 & D1
 `J2` controls the high address bit of the EEPROM making it appear at I2C address 0xA0 or 0xA2 depending on the jumper.
 
-#### Program the 3e-Audio ADAU1701 board
+#### Program the 3e-Audio ADAU1701 board (Windows 7)
 - Power up the ADAU1701 board with nothing attached - (ensure that the power jumpers are configured for the power supply you are using)
 - Connect pins 1 and 3 on J6 to make the EEPROM writeable 
   - J6 - pin 1 (pin closest to potentiometers) - ADAU1701 CLATCH/WP (write protect) pin, driven high by 3.3V through 10kOhm resistor if left unconnected
@@ -59,13 +55,14 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 - To temporarily load the current design to the ADAU1701: Click `Link, Compile, Download` 
 - To write the current design permanently to the eeprom: "Hardware Config" -> "Config" -> right click on ADAU1701 box -> "Write latest compilation to E2PROM"
 
-
 There is a bug with IIR table/Linkwitz Transform in sigma studio. To workaround, a1 and a2 need the sign inversed (1.990781326207430 -> -1.990781326207430)
 
-#### Windows 10 compatibility
-(This worked on windows 10 using a programming board that has been flashed with 24aa256.iic from above.)
+#### Program the 3e-Audio ADAU1701 board (Windows 7)
+(This worked on windows 10 using a programming board that has already been flashed with 24aa256.iic from above.)
 - Per instructions [here](https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739) download and install [Cypress FX3 SDK](https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit)
 - In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device"
+- Sigma Studio 4.7 + FX3SDK works with windows 11 22000.613 
+
 
 #### Reference Documentation
 - [Original DIY audio thread](https://www.diyaudio.com/forums/digital-line-level/269111-low-cost-usbi-programmer-using-cypress-cy7c68013a-board.html)

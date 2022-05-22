@@ -46,11 +46,11 @@ My board was a 2 jumper model. You may have a single jumper which I think is equ
 
 #### Write to the EEPROM to permanently store program on the 3e-Audio ADAU1701 board
 - Power up the ADAU1701 board with nothing attached - (ensure that the power jumpers are configured for the power supply you are using)
-- Connect pins 1 and 3 on J6 to make the EEPROM writeable 
+- It seems like you can write to eeprom without changing J6 ~~Connect pins 1 and 3 on J6 to make the EEPROM writeable 
   - J6 - pin 1 (pin closest to potentiometers) - ADAU1701 CLATCH/WP (write protect) pin, driven high by 3.3V through 10kOhm resistor if left unconnected
   - J6 - pin 2 eeprom - 24c64 WP (write protect) pin - left floating if left unconnected
   - J6 - pin 3 ground
-  - To program, connect P1 and P3. For normal operation, connect P1 and P2 or leave all unconnected.
+  - ~~To program, connect P1 and P3. For normal operation, connect P1 and P2 or leave all unconnected.
 
 - Power up the programmer before connecting it to the ADAU1701 board. Then connect pins as follows
   - (Cypress Programmer <-> 3e-Audio ADAU1701)

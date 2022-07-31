@@ -21,7 +21,7 @@ Working with Windows 7. See below for windows May work with more recent windows 
 ##### Windows 10 support
 (This worked on windows 10 using a programming board that has already been flashed with 24aa256.iic from above.)
 - Per instructions [here](https://community.infineon.com/t5/USB-Low-Full-High-Speed/CY7C68013A-driver-for-windows-10/td-p/186739) download and install [Cypress FX3 SDK](https://www.cypress.com/documentation/software-and-drivers/ez-usb-fx3-software-development-kit)
-- In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device"
+- In device manager manually set the driver for the device to "Cypress EZ-USB NX2LP-Flex BootLoader Device" (have disk -> C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\driver\bin\Win10\x64)
 - Sigma Studio 4.7 + FX3SDK works with windows 11 22000.613
 
 
